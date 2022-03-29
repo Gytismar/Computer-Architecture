@@ -7,29 +7,32 @@ int XORAS (int a, int b){
   return ((~a) & b) | (a & (~b));
 }
 
-void HalfSUM(int a, int b, int &sum, int &carry)
-{
-  sum = (XORAS(a,b));
-  carry = (a & b);
-}
+int Suma(int a, int b){
+  int carry = 0;
 
-void FULLSUM(int a, int b, int CIN, int& COUT, int& SUM){ // CIN = carry in, COUT = carry out
-  int sum1, sum2, carry1, carry2;
-  HalfSUM(a,b,sum1,carry1);
-  HalfSUM(sum1,CIN,sum2,carry2);
-  COUT = carry1 | carry2;
-  SUM = sum2;
+  while (b != 0){
+    carry = a & b;
+    a = XORAS(a,b);
+    b = carry << 1;
 
-  cout << SUM << " " << COUT;
-}
-
-void Sandauga(int a, int b){
-  int mask = 1;
-  int skaiciai[10000];
-
-  for (int i = 0; i < b; i++){
-    
+    cout << carry << " " << a << " " << b << endl;
   }
+
+  return a;
+}
+
+int Sandauga(int a, int b){
+  int x = 0;
+
+  while (b != 0){
+    if (b & 1){
+      x = Suma(x,a);
+    }
+    b = b >> 1;
+    a = a << 1;
+  }
+
+  return x;
 }
 
 
@@ -42,4 +45,6 @@ int main(int argc, char** argv)
   int XOR2 = (a | b) & (~(a & b));
   int XOR3 = (a | b) & ((~a) | (~b));
   int XOR4 = ~((~(a&(~(a&b)))) & (~(b & (~(a&b)))));
+
+  cout << Sandauga(a,b);
 }

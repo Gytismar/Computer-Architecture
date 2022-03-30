@@ -9,19 +9,12 @@ int XORAS (int a, int b){
 }
 
 int Suma(int a, int b){
-<<<<<<< HEAD
   unsigned int carry = 0;
   
-=======
-
->>>>>>> f15899c7c91e8f6cf82984e01878af98ea7667d4
   while (b != 0){
     carry = a & b;
     a = XORAS(a,b);
     b = carry << 1;
-<<<<<<< HEAD
-=======
->>>>>>> f15899c7c91e8f6cf82984e01878af98ea7667d4
   }
 
   return a;
@@ -51,14 +44,10 @@ int main(int argc, char** argv)
   int XOR2 = (a | b) & (~(a & b));
   int XOR3 = (a | b) & ((~a) | (~b));
   int XOR4 = ~((~(a&(~(a&b)))) & (~(b & (~(a&b)))));
-<<<<<<< HEAD
   
   ofstream failas ("Rez.csv",std::ios::in | std::ios::out | std::ios::ate); 
 //atidaryti skaitymui (in), atidaryti rašymui (out), eit į galą(ate)
 
   failas << XOR1 << ";" << XOR2 << ";" << XOR3 << ";" << XOR4 << ";" << Sandauga(a,b) << endl;
   // Visi XOR ir tada sandauga
-=======
-
->>>>>>> f15899c7c91e8f6cf82984e01878af98ea7667d4
 }

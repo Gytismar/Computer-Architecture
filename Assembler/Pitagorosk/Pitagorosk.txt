@@ -1,0 +1,93 @@
+#include <stdio.h>
+#include <iostream>
+#include <string.h>
+#include <fstream>
+#include <math.h>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+
+	int x[2000];
+	int y[2000];
+	int z[2000];
+
+	int kiekis = 0;
+
+	__declspec(align(16))float pirmieji[5] = {1,2,3,4};
+	__declspec(align(16))float antrieji[5] = {1,2,3,4};
+	__declspec(align(16))float zskaiciai[5] = { 1,2,3,4 };
+	__declspec(align(16))float rezultatai[5];
+
+	float* pirmptr;
+	float* antrptr;
+	float* zskaptr;
+	float* rezptr;
+
+	pirmptr = pirmieji;
+	antrptr = antrieji;
+	zskaptr = zskaiciai;
+	rezptr = rezultatai;
+	float temp;
+
+	for (int i = 0; i < 250; i ++) {
+		for (int b = 0; b < 4 && i != 0; b++) {
+			pirmieji[b] += 4;
+			antrieji[b] = pirmieji[b];
+		}
+		temp = pirmieji[0];
+		for (int b = 0; b <= 1000 - temp; b++) {
+			antrieji[0]++;
+			antrieji[1]++;
+			antrieji[2]++;
+			antrieji[3]++;
+			__asm {
+				push eax
+
+				mov eax, pirmptr
+				movaps xmm3, [eax]
+				mov eax, antrptr
+				movaps xmm4, [eax]
+
+				MULPS xmm3, xmm3
+				MULPS xmm4, xmm4
+				ADDPS  xmm3, xmm4
+				movaps xmm2, xmm3
+				sqrtps xmm2, xmm2
+
+				mov eax, zskaptr
+				movaps[eax], xmm2
+
+				CVTPS2DQ xmm1, xmm2
+				CVTDQ2PS xmm1, xmm1
+				MULPS xmm1, xmm1
+				SUBPS xmm1, xmm3
+
+				mov eax, rezptr
+				movaps[eax], xmm1
+
+				pop eax
+			}
+			for (int k = 0; k < 4; k++) {
+				if (rezultatai[k] == 0 && antrieji[k] <= 1000 && pirmieji[k] <= 1000) {
+					x[kiekis] = pirmieji[k];
+					y[kiekis] = antrieji[k];
+					z[kiekis] = zskaiciai[k];
+					kiekis++;
+				}
+			}
+		}
+	}
+	ofstream rez("rez.csv");
+	rez << "x" << "," << "y" << "," << "z" << endl;
+	for (int i = 0; i < kiekis; i++) {
+		rez << x[i] << "," << y[i] << "," << z[i] << endl;
+	}
+	rez.close();
+
+	cout << kiekis;
+
+	return 0;
+
+}

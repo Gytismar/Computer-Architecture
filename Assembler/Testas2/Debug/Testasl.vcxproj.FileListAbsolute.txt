@@ -1,0 +1,2 @@
+C:\Users\Gytis\source\repos\Testasl\Debug\Testasl.exe
+C:\Users\Gytis\source\repos\Testasl\Debug\Testasl.pdb

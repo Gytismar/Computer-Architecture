@@ -1,0 +1,4 @@
+﻿  Pitagorassk.cpp
+C:\Users\Gytis\source\repos\Testasl\Pitagorassk.cpp(7,6): warning C4101: 'iLettersCount': unreferenced local variable
+  LINK : C:\Users\Gytis\source\repos\Testasl\Debug\Testasl.exe not found or not built by the last incremental link; performing full link
+  Testasl.vcxproj -> C:\Users\Gytis\source\repos\Testasl\Debug\Testasl.exe

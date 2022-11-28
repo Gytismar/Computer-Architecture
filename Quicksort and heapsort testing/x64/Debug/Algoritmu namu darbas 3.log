@@ -1,33 +1,12 @@
 ﻿  Algoritmu namu darbas 3.cpp
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(80,33): warning C4244: '=': conversion from '_Rep' to 'double', possible loss of data
+C:\Users\admin\Documents\GitHub\Computer-Architecture\Quicksort and heapsort testing\Algoritmu namu darbas 3.cpp(86,33): warning C4244: '=': conversion from '_Rep' to 'double', possible loss of data
           with
           [
               _Rep=__int64
           ]
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(89,33): warning C4244: '=': conversion from '_Rep' to 'double', possible loss of data
+C:\Users\admin\Documents\GitHub\Computer-Architecture\Quicksort and heapsort testing\Algoritmu namu darbas 3.cpp(95,33): warning C4244: '=': conversion from '_Rep' to 'double', possible loss of data
           with
           [
               _Rep=__int64
           ]
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(197,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(208,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(211,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(214,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(217,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(223,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(226,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(229,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(232,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(238,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(241,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(244,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(247,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(253,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(256,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(259,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(262,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(268,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(271,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(274,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\Algoritmu namu darbas 3.cpp(277,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Algoritmu namu darbas 3.vcxproj -> C:\Users\Gytis\source\repos\Algoritmu nd3\Algoritmu namu darbas 3\x64\Debug\Algoritmu namu darbas 3.exe
+  Algoritmu namu darbas 3.vcxproj -> C:\Users\admin\Documents\GitHub\Computer-Architecture\Quicksort and heapsort testing\x64\Debug\Algoritmu namu darbas 3.exe
